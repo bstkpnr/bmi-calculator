@@ -1,5 +1,6 @@
 import React from 'react'
 import BMIHesapla from '../src/components/Hesapla/BMIHesapla'
+import Info from '../src/components/BMINedir/Info'
 
 function App() {
   
@@ -8,6 +9,7 @@ function App() {
     <>
     <div>
       <BMIHesapla  />
+      <Info/>
     </div>
     <div>
     
