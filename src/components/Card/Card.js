@@ -1,11 +1,14 @@
 import React from "react";
 import { Card, Container } from "react-bootstrap";
+import "./Card.css"
 
 function YuksekKilo() {
   return (
-    <Card className="text-center col-6">
+    <Container className=" col-sm-6">
+
+    <Card className="styleCard card text-center " style={{width:"38rem"}}>
       <Card.Img variant="top" src="yuksek.jpg" className="col-2 text-center" />
-      <Card.Body>
+      <Card.Body className="card-body">
         <Card.Title style={{ color: "red" }}>
           İdeal Kilonun Çok Üzerinde
         </Card.Title>
@@ -20,19 +23,20 @@ function YuksekKilo() {
         </Card.Text>
       </Card.Body>
     </Card>
+    </Container>
   );
 }
 
 function Ideal() {
   return (
-    <Container className=" col-12 align-items-center">
-      <Card className="text-center col-6 justify-content-center">
+    <Container className=" col-sm-6">
+      <Card className="styleCard card text-center " style={{width:"38rem"}}>
         <Card.Img
           variant="top"
           src="saglıklı.jpg"
           className="col-2 text-center"
         />
-        <Card.Body>
+        <Card.Body className="card-body">
           <Card.Title style={{ color: "green" }}>Kilonuz İdeal</Card.Title>
           <Card.Text>
             Harikasın! Tam da ideal kilondasın! Şimdi sana düşen bunu korumak.
@@ -45,9 +49,11 @@ function Ideal() {
 }
 function Zayıf() {
   return (
-    <Card className="text-center col-6 ">
+    <Container className=" col-sm-6">
+
+    <Card className="styleCard card text-center " style={{width:"38rem"}}>
       <Card.Img variant="top" src="zayıf.jpg" className="col-2 text-center" />
-      <Card.Body>
+      <Card.Body className="card-body">
         <Card.Title style={{ color: "orange" }}>
           İdeal Kilonun Altında
         </Card.Title>
@@ -57,6 +63,7 @@ function Zayıf() {
         </Card.Text>
       </Card.Body>
     </Card>
+    </Container>
   );
 }
 
