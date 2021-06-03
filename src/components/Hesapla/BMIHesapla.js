@@ -52,10 +52,10 @@ function Hesapla() {
   return (
     <>
       {" "}
-      <Container className="col-2 mt-2" style={{backgroundColor:"#fcf8e8"}}>
+      <Container className="col-2 mt-3" style={{backgroundColor:"#93b5e1",borderRadius:"8px"}}>
         <Form className="form-group  ">
           <Form.Group className=" mb-3 " controlId="formBasicEmail">
-            <Form.Label className="h5 text-center mb-4" style={{color:"#6155a6"}}>
+            <Form.Label className="h5 text-center mb-4 mt-2" style={{color:"#c70039"}}>
               Adınızı Giriniz
             </Form.Label>
             <Form.Control
@@ -66,7 +66,7 @@ function Hesapla() {
           </Form.Group>
 
           <Form.Group className=" mb-3 " controlId="formBasicEmail">
-            <Form.Label className="h5 text-center mb-4" style={{color:"#6155a6"}}>
+            <Form.Label className="h5 text-center mb-4" style={{color:"#c70039"}}>
               Boyunuzu Giriniz
             </Form.Label>
             <Form.Control
@@ -76,18 +76,18 @@ function Hesapla() {
             />
           </Form.Group>
           <Form.Group className="mb-3" controlId="formBasicPassword">
-            <Form.Label className="h5 text-center mb-4" style={{color:"#6155a6"}}>
+            <Form.Label className="h5 text-center mb-4" style={{color:"#c70039"}}>
               Kilonuzu Giriniz{" "}
             </Form.Label>
             <Form.Control value={weight} onChange={handleWeight} />
           </Form.Group>
-          <Button onClick={calc} variant="outline-secondary" className="mb-2" >
+          <Button onClick={calc} variant="danger" className="mb-2" >
             Gönder
           </Button>
         </Form>
       </Container>
       <div>
-        <h2 className="text-center">
+        <h2 className="text-center" style={{color:"red"}}>
           {!bmi ? null :
 
         bmi > 25 ? (

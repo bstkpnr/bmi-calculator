@@ -4,7 +4,7 @@ import "./Info.css"
 
 function Info() {
   return (
-    <Card className=" hoverCard  bg-dark text-light "  >
+    <Card className=" position-absolute fixed-top fixed-left hoverCard  bg-dark text-light "  >
     <Card.Body>
       <Card.Title style={{color:"red"}}>BMI Nedir?</Card.Title>
       <Card.Text>

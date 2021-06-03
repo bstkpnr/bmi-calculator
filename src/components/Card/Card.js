@@ -4,9 +4,9 @@ import "./Card.css"
 
 function YuksekKilo() {
   return (
-    <Container className=" col-sm-6">
+    <Container className=" col-sm-5 flex flex-column">
 
-    <Card className="styleCard card text-center " style={{width:"38rem"}}>
+    <Card className="card  flex justify-content-center align-items-center shadow-lg" style={{width:"38rem"}}>
       <Card.Img variant="top" src="yuksek.jpg" className="col-2 text-center" />
       <Card.Body className="card-body">
         <Card.Title style={{ color: "red" }}>
@@ -29,8 +29,8 @@ function YuksekKilo() {
 
 function Ideal() {
   return (
-    <Container className=" col-sm-6">
-      <Card className="styleCard card text-center " style={{width:"38rem"}}>
+    <Container className=" col-sm-5">
+      <Card className="card  flex justify-content-center align-items-center shadow-lg " style={{width:"38rem"}}>
         <Card.Img
           variant="top"
           src="saglıklı.jpg"
@@ -49,9 +49,9 @@ function Ideal() {
 }
 function Zayıf() {
   return (
-    <Container className=" col-sm-6">
+    <Container className=" col-sm-5">
 
-    <Card className="styleCard card text-center " style={{width:"38rem"}}>
+    <Card className="card  flex justify-content-center align-items-center shadow-lg " style={{width:"38rem"}}>
       <Card.Img variant="top" src="zayıf.jpg" className="col-2 text-center" />
       <Card.Body className="card-body">
         <Card.Title style={{ color: "orange" }}>
